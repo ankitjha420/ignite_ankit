@@ -1,0 +1,116 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'FutureWorldsItalic';
+    src: url(./fonts/FutureWorldsItalic.otf);
+}
+@font-face {
+    font-family: 'GothamBold';
+    src: url(./fonts/GothamBold.otf);
+}
+
+html, body{
+     height: 100%;
+     width: 100%;
+}
+
+.section-one{
+    background: linear-gradient(180deg, #3C0C69 10.77%, #65239C 29.75%, #932B82 52.85%, #641B58 75%, #3E1144 100%);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.content{
+    position: absolute;
+    height: 50vh;
+    width: 27vw;
+    top: 13.444%;
+    left: 36.453%;
+    color: white;
+    font-family: 'FutureWorldsItalic';
+    background-image: url(./assets/Ignite\ Central.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cta{
+    position: absolute;
+    height: 6.15vh;
+    width: 15.7vw;
+    top: 65%;
+    left: 42.15%;
+    font-family: 'GothamBold';
+    border-radius: 20px;
+    font-size: 2.34vh;
+}
+@media all and (max-width: 400px){
+    .content{
+        width: 80vw;
+        left: 38px;
+        height: 30vh;
+        top: 176px;
+    }
+    .cta{
+        width: 50vw;
+        left: 25%;
+        top: 55%;
+    }
+}
+
+
+/* NAVBAR STYLES BELOW */
+
+nav{
+    color: white;
+    position: fixed;
+    top: 32px;
+    width: 43vw;
+    right: 2rem;
+}
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style-type: none;
+    font-family: 'GothamBold';
+    font-size: 1rem;
+}
+
+@media all and (max-width: 780px){
+    nav{
+        display: none;
+    }
+}
+
+/* HAMBURGER STYLES */
+
+.hamburger{
+    height: 1.5em;
+    width: 2em;
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0%;
+}
+.line{
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    
+}
+@media all and (max-width: 780px){
+    .hamburger{
+        opacity: 100%;
+    }
+}
